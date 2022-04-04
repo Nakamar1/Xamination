@@ -34,7 +34,7 @@ def soal_mtk(request):
 	respon = request.POST	
 	if str(request) == "<WSGIRequest: GET '/mapel/mtk/soal'>" and len(jawaban_user) >= 5:
 		print('masuk')
-		for i in range(5):
+		for i in range(len(jawaban_user)):
 			print(jawaban_user)
 			if jawaban_user[0] in 'abcd':
 				jawaban_user.remove(jawaban_user[0])
@@ -86,7 +86,7 @@ def soal_ipa(request):
 	respon = request.POST	
 	if str(request) == "<WSGIRequest: GET '/mapel/ipa/soal'>" and len(jawaban_user) >= 5:
 		print('masuk')
-		for i in range(5):
+		for i in range(len(jawaban_user)):
 			print(jawaban_user)
 			if jawaban_user[0] in 'abcd':
 				jawaban_user.remove(jawaban_user[0])
@@ -139,7 +139,7 @@ def soal_indo(request):
 	respon = request.POST	
 	if str(request) == "<WSGIRequest: GET '/mapel/b_indo/soal'>" and len(jawaban_user) >= 5:
 		print('masuk')
-		for i in range(5):
+		for i in range(len(jawaban_user)):
 			print(jawaban_user)
 			if jawaban_user[0] in 'abcd':
 				jawaban_user.remove(jawaban_user[0])
@@ -191,7 +191,7 @@ def soal_ing(request):
 	respon = request.POST	
 	if str(request) == "<WSGIRequest: GET '/mapel/b_ing/soal'>" and len(jawaban_user) >= 5:
 		print('masuk')
-		for i in range(5):
+		for i in range(len(jawaban_user)):
 			print(jawaban_user)
 			if jawaban_user[0] in 'abcd':
 				jawaban_user.remove(jawaban_user[0])
