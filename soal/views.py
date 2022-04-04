@@ -32,7 +32,7 @@ def soal_mtk(request):
 	jawaban = ''
 	print(request.POST)
 	respon = request.POST	
-	if str(request) == "<WSGIRequest: GET '/mapel/mtk/soal'>" and len(jawaban_user) == 5:
+	if str(request) == "<WSGIRequest: GET '/mapel/mtk/soal'>" and len(jawaban_user) >= 5:
 		print('masuk')
 		for i in range(5):
 			print(jawaban_user)
@@ -137,7 +137,7 @@ def soal_indo(request):
 	jawaban = ''
 	print(request.POST)
 	respon = request.POST	
-	if str(request) == "<WSGIRequest: GET '/mapel/b_indo/soal'>" and len(jawaban_user) == 5:
+	if str(request) == "<WSGIRequest: GET '/mapel/b_indo/soal'>" and len(jawaban_user) >= 5:
 		print('masuk')
 		for i in range(5):
 			print(jawaban_user)
@@ -189,7 +189,7 @@ def soal_ing(request):
 	jawaban = ''
 	print(request.POST)
 	respon = request.POST	
-	if str(request) == "<WSGIRequest: GET '/mapel/b_ing/soal'>" and len(jawaban_user) == 5:
+	if str(request) == "<WSGIRequest: GET '/mapel/b_ing/soal'>" and len(jawaban_user) >= 5:
 		print('masuk')
 		for i in range(5):
 			print(jawaban_user)
